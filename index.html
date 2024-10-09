@@ -1,0 +1,50 @@
+ 
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReBirth RB-338 Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="rebirth-container">
+        <h1>ReBirth RB-338 Clone</h1>
+        
+        <div class="module" id="tb303">
+            <h2>TB-303 Bass Line</h2>
+            <div class="knob" data-param="cutoff"></div>
+            <div class="knob" data-param="resonance"></div>
+            <div class="knob" data-param="envmod"></div>
+            <input type="range" class="slider" data-param="accent">
+            <button class="button" data-action="play303">Play</button>
+        </div>
+        
+        <div class="module" id="tr808">
+            <h2>TR-808 Rhythm Composer</h2>
+            <button class="button" data-sound="kick">Kick</button>
+            <button class="button" data-sound="snare">Snare</button>
+            <button class="button" data-sound="hihat">Hi-Hat</button>
+            <button class="button" data-sound="clap">Clap</button>
+            <button class="button" data-sound="cowbell">Cowbell</button>
+        </div>
+        
+        <div class="module" id="tr909">
+            <h2>TR-909 Rhythm Composer</h2>
+            <button class="button" data-sound="kick">Kick</button>
+            <button class="button" data-sound="snare">Snare</button>
+            <button class="button" data-sound="hihat">Hi-Hat</button>
+            <button class="button" data-sound="clap">Clap</button>
+        </div>
+        
+        <div class="module" id="transport">
+            <h2>Transport</h2>
+            <button class="button" id="playButton">Play</button>
+            <button class="button" id="stopButton">Stop</button>
+            <input type="range" class="slider" id="tempoSlider" min="60" max="200" value="120">
+            <span id="tempoDisplay">120 BPM</span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
